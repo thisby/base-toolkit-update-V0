@@ -207,7 +207,7 @@ async function connectWallet() {
 }
 
 async function switchToBaseMainnet() {
-  const baseChainIdHex = "0x2105"; // 8453 in hex
+  const baseChainIdHex = process.env.BASE_CHAIN_IDX"; // 8453 in hex
 
   const currentChainId = await window.ethereum.request({
     method: "eth_chainId",
